@@ -3,6 +3,7 @@
 
 gris_oscuro = #333333
 gris_claro = #818182
+rojo = #BD255B
 
 body
 	font-family 'Varela Round', sans-serif
@@ -13,6 +14,10 @@ figure
 	
 a 
 	text-decoration none
+	
+img
+	vertical-align top 
+	
 .button-menu
 	color gris_oscuro
 	left .5em
@@ -31,18 +36,48 @@ a
 	display none
 .relative
 	position relative
+.right-text
+	text-align right
+.action 
+	color #fff
+	margin-right .5em
+	font-size 1.2em
+	&:last-child
+		margin-right 0
+
+.actions
+	position absolute
+	bottom 0
+	left 0
+	right 0
+	background rgba(black,.3)
+
 .author
 	color gris_claro
+	
+.center-block
+	margin 0 auto
+	
+.center-text
+	text-align center
+
+.padding
+	padding 1em
+
+.progress
+	.total
+		height 5px
+		background gris_claro
+		width 100%
+		margin 10px
+
 .header
 	height 3.5em
-	
-	//a 
-	//	display none
 	.title
 		font-size 1.1em
 		text-align center
 		margin 0
-		line-height 3.5 em
+		line-height 3.5em
 		
 .song
 	display inline-block 
@@ -55,3 +90,8 @@ a
 		margin-right 0
 	p
 		margin .5em 0
+
+.playing
+	&.small
+		width 20em
+	
